@@ -21,6 +21,34 @@ Integrating a microcontroller into a radio project involving this DSP series can
 
 
 
+## The Si4825 pinout
+
+To build a radio based on the Si4825 or even modify a commercial radio, it is essential to know the functions of its pins. The following figure presents the pin configuration of the Si4825.
+
+
+![The Si4825 pinout](./schematic/SI4825_PINOUT.jpg)
+
+
+
+| Pin # | Name       | Description |
+| ----- | ---------- | ----------- |
+| 1     | LNA_EN     | Enable SW external LNA - Wide or Narrow band - See band table |
+| 2     | TUNE1      | Frequency tuning - Connected to the 100K  potentiometer | 
+| 3     | TUNE2      | Frequency tuning -  Connected to the 100K  potentiometer |
+| 4     | BAND       | Band selection -  connected to voltage divider  / band selector |
+| 5     | NC         | No connect. Leave floating |
+| 6     | FMI        | FM RF inputs. FMI should be connected to the antenna trace |
+| 7     | RFGND      | RF ground. Connect to ground plane on PCB |
+| 8     | AMI        | AM RF input. AMI should be connected to the AM antenna |
+| 9     | RST        | Device reset (active low) input |
+| 10    | VOL+       | Volume button up |
+| 11    | VOL–       | Volume button down |
+| 12    | XTALO      | Crystal oscillator output |
+| 13    | XTALI      | Crystal oscillator input/external reference clock input |
+| 14    | VDD        | Supply voltage. May be connected directly to battery |
+| 15    | GND        | Ground. Connect to ground plane on PCB |
+| 16    | AOUT       | Audio output |
+
 
 
 
@@ -164,3 +192,10 @@ The following example illustrates the band configuration for a hypothetical 12-b
 
 
 ![Si4825 Band setup Example](./schematic/si4825_band_setup_example.jpg)
+
+
+
+## References 
+
+* BROADCAST MECHANICAL TUNING AM/FM/SW RADIO RECEIVER (Si4825-A10)
+* SKYWORKS -  Si4825 DEMO BOARD USER’S GUIDE (Si4825-DEMO)
