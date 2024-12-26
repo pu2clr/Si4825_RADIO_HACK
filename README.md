@@ -87,7 +87,7 @@ As a result, each shortwave band can have **two possible coverage ranges**. See 
 
 | Band Name  | Band Frequency Range       | Channel Space | AR(K) | Note               |
 | ---------- | -------------------------- | --------------| ----- | ------------------ |  
-|            |                            |               |       | 47K top resistor   |   
+|            |                            |               |       | 47K botton resistor|   
 | FM1        | 87–108 MHz (50 µs)         |               |  47   |                    |             
 | FM2        | 87–108 MHz (50 µs)         |               |  57   |                    | 
 | FM3        | 87–108 MHz (75 µs)         |               |  67   |                    |
@@ -147,12 +147,20 @@ As a result, each shortwave band can have **two possible coverage ranges**. See 
 | SW17-Narrow| 21.2–22 MHz                |      5k       |       | Pin 1 **floating** |   
 | SW18-Wide  | 18.0–28.5 MHz              |      5k       | 447   | Pin 1 pulled up    |
 | SW18-Narrow| 21.45–21.85 MHz            |      5k       |       | Pin 1 **floating** | 
-|            |                            |               | 500   | 53K bottom resistor|       
+|            |                            |               | 500   | 53K top resistor   |       
 
 #### About the Previous Table:
 
-* The **Top resistor** (first line) represents the minimum resistance required to reach the first band (FM1). 
-* The Bottom resistor (last line) is the value needed to complete a total of 500K. Hypothetically, if you use all the bands described in the table, you should use a 53K resistor.
+* The **Botton Resistor** (first line - connected to GND) represents the minimum resistance required to reach the first band (FM1). 
+* The **Top Resistor** (last line - connected to TUNE1) is the value needed to complete a total of 500K. Hypothetically, if you use all the bands described in the table, you should use a 53K resistor.
 * AR(K) is the value of the accumulated resistance required to select the desired band. For example: Consider that the receiver you are designing only includes the SW 10 band. The value of the first resistor (top resistor) should be 367K, and the value of the second resistor (bottom resistor) should be 133K (500 - 367). The common point between the two resistors must be connected to pin 4 of the Si4825 (BAND).
 * Pay attention to the SW bands and observe the Wide and Narrow configurations. The resistance value required to select the band does not change. The Wide or Narrow configuration is determined by pin 1 of the Si4825, as previously described.
 
+
+
+#### Si4825 Band setup Example
+
+The following example illustrates the band configuration for a hypothetical 12-band radio, one FM band, one MW(AM) band, and 10 SW bands. Observe in the circuit the indication of the band name (according to the previous table), the applied resistors, and the accumulated resistance value. It is important to highlight that for this hypothetical project, pin 1 of the Si4825 is not in the pull-up configuration. Thus, all selected SW bands will be 'Narrow'.
+
+
+![Si4825 Band setup Example](./schematic/si4825_band_setup_example.jpg)
