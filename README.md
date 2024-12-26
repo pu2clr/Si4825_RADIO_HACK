@@ -128,7 +128,7 @@ As a result, each shortwave band can have **two possible coverage ranges**. See 
 | SW8-Wide   | 5.9–9.50 MHz               |      5k       | 347   | Pin 1 pulled up    |
 | SW8-Narrow | 7.1–7.6 MHz                |      5k       |       | Pin 1 **floating** |   
 | SW9-Wide   | 5.9–18.0 MHz               |      5k       | 357   | Pin 1 pulled up    |
-| SW9-Narrow | 3.90–4.00 MHz              |      5k       |       | Pin 1 **floating** | 
+| SW9-Narrow | 9.2–10 MHz                 |      5k       |       | Pin 1 **floating** | 
 | SW10-Wide  | 7.0–16.0 MHz               |      5k       | 367   | Pin 1 pulled up    | 
 | SW10-Narrow| 11.45–12.25 MHz            |      5k       |       | Pin 1 **floating** |
 | SW11-Wide  | 7.0–23.0 MHz               |      5k       | 377   | Pin 1 pulled up    |
