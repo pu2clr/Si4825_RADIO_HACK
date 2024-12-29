@@ -256,8 +256,19 @@ In the image below, note the red highlights indicating the removal of the origin
 
 ![Low-Cost AM/FM Radio](./Images/EXAMPLE_R05.jpg)
 
+The figure below shows the new "band selector" for the radio. In reality, it is a 1M potentiometer, but ideally, it should be a 500K potentiometer.
+
+Remember that, as previously mentioned, the resistor network (voltage divider) for band selection should be 500K, according to the manufacturer. Since it is a voltage divider, using a 1M potentiometer for this purpose did not seem to cause any issues.
+
+In the configuration shown in the image, the receiver will cover all the Narrow bands available on the Si4825.
+
+The challenge with this approach – using a variable resistor instead of a band switch – is that locating the desired band becomes more difficult, as there is no precise indication of the resistance or the voltage divider result on the potentiometer. However, with experience using the radio in this configuration, it becomes easier to find a particular band and, consequently, a shortwave station.
+
 
 ![Low-Cost AM/FM Radio](./Images/EXAMPLE_R06.jpg)
+
+
+The figure below illustrates the final result of the modification. There is a [video on YouTube](https://youtu.be/3q1Z5tCHIJM?si=PKrBP-vTaTvmAvGj) (in Portuguese) that showcases some shortwave receptions using this radio. Link to the vídeo: https://youtu.be/3q1Z5tCHIJM?si=PKrBP-vTaTvmAvGj
 
 
 ![Low-Cost AM/FM Radio](./Images/EXAMPLE_R07.jpg)
