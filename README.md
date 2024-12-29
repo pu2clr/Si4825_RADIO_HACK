@@ -126,7 +126,7 @@ As a result, each shortwave band can have **two possible coverage ranges**. See 
 | FM8        | 87.3–108.25 MHz (50 µs)    |               | 117   |                    |
 | FM9        | 87.3–108.25 MHz (75 µs)    |               | 127   |                    |
 | FM10       | 87.3–108.25 MHz (75 µs)    |               | 137   |                    |
-| M11        | 76–90 MHz (50 µs)          |               | 147   |                    |
+| FM11       | 76–90 MHz (50 µs)          |               | 147   |                    |
 | FM12       | 76–90 MHz (50 µs)          |               | 157   |                    |
 | FM13       | 64–87 MHz (50 µs)          |               | 167   |                    |
 | FM14       | 64–87 MHz (50 µs)          |               | 177   |                    |
@@ -183,6 +183,25 @@ As a result, each shortwave band can have **two possible coverage ranges**. See 
 * The **Top Resistor** (last line - connected to TUNE1) is the value needed to complete a total of 500K. Hypothetically, if you use all the bands described in the table, you should use a 53K resistor.
 * AR(K) is the value of the accumulated resistance required to select the desired band. For example: Consider that the receiver you are designing only includes the SW 10 band. The value of the first resistor (top resistor) should be 367K, and the value of the second resistor (bottom resistor) should be 133K (500 - 367). The common point between the two resistors must be connected to pin 4 of the Si4825 (BAND).
 * Pay attention to the SW bands and observe the Wide and Narrow configurations. The resistance value required to select the band does not change. The Wide or Narrow configuration is determined by pin 1 of the Si4825, as previously described.
+
+#### About Narrow and Wide band setup
+
+The Si4825 allows configuration between Wide Band and Narrow Band through pin 1 (LNA_EN). Frequency coverage for Wide and Narrow Band is detailed in the previous table.
+
+In general, Wide Band is recommended when the goal is to provide the user with a broad frequency range, with limited band selection options on the receiver. While this approach allows for shortwave reception over a wide range, it can make locating and tuning to a specific station more challenging. To configure the receiver for Wide Band, simply add a 10kΩ pull-up resistor to the LNA_EN pin.
+
+Conversely, if the radio design includes a multi-position band selection switch (six or more positions, for example), Narrow Band configuration may be more suitable. This option offers narrower coverage bands, providing a more precise tuning experience and making it easier to locate a specific station. For this configuration, the LNA_EN pin should be left floating (unconnected).
+
+It is also possible to implement both options in the same design. To achieve this, add a switch that, when turned on, connects the pull-up resistor to the LNA_EN pin, and when turned off, leaves the pin floating.
+
+***Note: Changing the state of this switch does not immediately alter the configuration from Wide to Narrow (or vice-versa). For the change to take effect, the Si4825 must be reset or power-cycled.***
+
+
+The circuit below shows the Narrow and Wide Band setup.  
+
+
+![About Narrow and Wide band setup](./schematic/si4825_Narrow_and_Wide_Band_Setup.jpg)
+
 
 
 
