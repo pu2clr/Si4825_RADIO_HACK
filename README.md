@@ -205,7 +205,7 @@ The circuit below shows the Narrow and Wide Band setup.
 
 #### Si4825 Band setup Example
 
-The following example illustrates the band configuration for a hypothetical 12-band radio, one FM band, one MW(AM) band, and 10 SW bands. Observe in the circuit the indication of the band name (according to the previous table), the applied resistors, and the accumulated resistance value. It is important to highlight that for this hypothetical project, pin 1 of the Si4825 is not in the pull-up configuration. Thus, all selected SW bands will be 'Narrow'.
+The following example illustrates the band configuration for a hypothetical 12-band radio, one FM band, one MW(AM) band, and 10 SW bands. Observe in the circuit the indication of the band name (according to the previous table), the applied resistors, and the accumulated resistance value. ***It is important to highlight that for this hypothetical project, pin 1 of the Si4825 is not in the pull-up configuration. Thus, all selected SW bands will be 'Narrow'.***
 
 
 ![Si4825 Band setup Example](./schematic/si4825_band_setup_example.jpg)
@@ -273,6 +273,11 @@ The figure below illustrates the final result of the modification. There is a [v
 
 ![Low-Cost AM/FM Radio](./Images/EXAMPLE_R07.jpg)
 
+
+
+***It is essential to analyze the front-end of the radio being modified, including the antenna, band-pass filters, and other components. Some commercial receivers, even low-cost ones, may use some form of signal processing at the RF input. This means that, in certain cases, signals within specific frequency ranges may be filtered, preventing adequate reception of certain bands.***
+
+***In the case of the receiver presented in this example, such filtering does not occur. However, if you encounter difficulties tuning to Shortwave stations in certain bands, it is recommended to inspect the AMI (AM Input) and FMI (FM Input) circuits. If necessary, consider modifying these circuits to resemble the model suggested in the Si4825 datasheet.***
 
 
 ## References 
