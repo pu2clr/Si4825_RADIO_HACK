@@ -203,14 +203,44 @@ The circuit below shows the Narrow and Wide Band setup.
 ![About Narrow and Wide band setup](./schematic/si4825_Narrow_and_Wide_Band_Setup.jpg)
 
 
-
-
 #### Si4825 Band setup Example
 
 The following example illustrates the band configuration for a hypothetical 12-band radio, one FM band, one MW(AM) band, and 10 SW bands. Observe in the circuit the indication of the band name (according to the previous table), the applied resistors, and the accumulated resistance value. It is important to highlight that for this hypothetical project, pin 1 of the Si4825 is not in the pull-up configuration. Thus, all selected SW bands will be 'Narrow'.
 
 
 ![Si4825 Band setup Example](./schematic/si4825_band_setup_example.jpg)
+
+
+
+## Examplo 1 - Modifying a Low-Cost AM/FM Radio to Receive Shortwave
+
+
+In this example, a small modification will be made to a low-cost radio (priced at $5 or less), based on the Si4825, with only two band options (AM/MW and FM). The image below shows the radio.
+
+![Low-Cost AM/FM Radio](./Images/R_EXAMPLE_03.jpg)
+
+
+
+
+![Low-Cost AM/FM Radio](./Images/EXAMPLE_R01.jpg)
+
+
+![Low-Cost AM/FM Radio](./Images/EXAMPLE_R02.jpg)
+
+
+![Low-Cost AM/FM Radio](./Images/EXAMPLE_R03.jpg)
+
+
+![Low-Cost AM/FM Radio](./Images/EXAMPLE_R04.jpg)
+
+
+![Low-Cost AM/FM Radio](./Images/EXAMPLE_R05.jpg)
+
+
+![Low-Cost AM/FM Radio](./Images/EXAMPLE_R06.jpg)
+
+
+![Low-Cost AM/FM Radio](./Images/EXAMPLE_R07.jpg)
 
 
 
