@@ -234,13 +234,24 @@ To confirm that it is indeed the Si4825, it is necessary to identify the connect
 ![Low-Cost AM/FM Radio](./Images/EXAMPLE_R02.jpg)
 
 
+In the figure below, note the red highlights. These indicate the points where the modification will be made. Essentially, the modification involves removing the resistors responsible for selecting the AM and FM bands.
 
+Notice that there is a two-position switch that allows for this selection. The center point of the switch is connected to pin 4 of the IC, indicating that it is a Si4825. To confirm, observe the connections to the tuning potentiometer.
 
 
 ![Low-Cost AM/FM Radio](./Images/EXAMPLE_R03.jpg)
 
 
+In a closer view, note that the IC has been scraped by the manufacturer. This highlights the importance of knowing the Si4825 pin configuration as well as understanding the connections of external components to the IC.
+
+
 ![Low-Cost AM/FM Radio](./Images/EXAMPLE_R04.jpg)
+
+
+In the image below, note the red highlights indicating the removal of the original band selection resistors, as well as the removal of the original band switch.
+
+***Note: Depending on the modification to be made, removing the original switch may not be necessary.***
+
 
 
 ![Low-Cost AM/FM Radio](./Images/EXAMPLE_R05.jpg)
