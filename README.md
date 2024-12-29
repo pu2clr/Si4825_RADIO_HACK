@@ -220,12 +220,21 @@ In this example, a small modification will be made to a low-cost radio (priced a
 ![Low-Cost AM/FM Radio](./Images/R_EXAMPLE_03.jpg)
 
 
+The image below shows the radio opened, with the top part of the circuit board featuring very few components – a characteristic of DSP-based receivers, including the Si4825.
 
 
 ![Low-Cost AM/FM Radio](./Images/EXAMPLE_R01.jpg)
 
 
+The image below shows the bottom part of the circuit board, where the DSP Integrated Circuit (likely the Si4825) can be located. Why "likely"? Well, it is common for receivers with the same appearance to be equipped with other DSPs competing with the Si4825.
+
+To confirm that it is indeed the Si4825, it is necessary to identify the connections between the IC and the tuning potentiometer (pins 2 and 3), the band selection pin (pin 4), the pins where the crystal is connected (pins 12 and 13), the AM antenna (pin 8 - AMI), and the FM antenna (pin 6 - FMI). It is unlikely that an IC from another manufacturer will have the same pin configuration.
+
+
 ![Low-Cost AM/FM Radio](./Images/EXAMPLE_R02.jpg)
+
+
+
 
 
 ![Low-Cost AM/FM Radio](./Images/EXAMPLE_R03.jpg)
