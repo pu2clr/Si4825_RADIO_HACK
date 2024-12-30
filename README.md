@@ -197,10 +197,16 @@ It is also possible to implement both options in the same design. To achieve thi
 ***Note: Changing the state of this switch does not immediately alter the configuration from Wide to Narrow (or vice-versa). For the change to take effect, the Si4825 must be reset or power-cycled.***
 
 
+The images below show the dial examples of commertial receivers based on Si4825 using Narrow and Wide band setup. 
+
 
 ##### Narrow band commertial receiver dial 
 
 ![Narrow band commertial receiver dial](./Images/NARROW_BAND_EXAMPLE_01.jpg)
+
+Notice in the previous figure that the radio design divides the Shortwave bands into six segments: 6.8 to 7.6 MHz, 9.2 to 10.0 MHz, 11.4 to 12.4 MHz, 13.4 to 14.2 MHz, 15.0 to 15.9 MHz, and 17.1 to 18.0 MHz. This configuration requires a six-position band switch for Shortwave, plus one position for AM/MW and another for FM, totaling eight positions.
+
+This design can provide a better station tuning experience. The narrower bands make it easier to locate and tune to a station compared to a 'Wide Band' design. Additionally, nearby stations broadcasting at the same time are easier to separate.
 
 
 ##### Wide band commertial receiver dial 
@@ -208,11 +214,15 @@ It is also possible to implement both options in the same design. To achieve thi
 
 ![Wide band commertial receiver dial](./Images/WIDE_BAND_EXAMPLE_01.jpg)
 
+Notice on the dial shown in the previous figure that a single SW band covers from 5.9 to 18 MHz. This characteristic simplifies, to some extent, the radio design when adding the Shortwave band. However, this configuration may make it more difficult to tune stations, especially if the user wants to tune in to a station located among others nearby.
+
 
 The circuit below shows the Narrow and Wide Band setup.  
 
 
 ![About Narrow and Wide band setup](./schematic/si4825_Narrow_and_Wide_Band_Setup.jpg)
+
+
 
 
 #### Si4825 Band setup Example
