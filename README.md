@@ -4,14 +4,14 @@ This project focuses on converting AM/FM radios equipped with the Si4825 DSP to 
 
 The goal is to unlock new capabilities in receivers based on the Si4825, providing a practical and accessible way to upgrade and customize low-cost AM/FM radios for shortwave listening. This repository will serve as a guide for the construction, modification, and improvement of Si4825-based receivers, offering insights into hardware adjustments and software tweaks when applicable.
 
-Some of the modifications presented here will suggest replacing the Si4825 with the Si4827 – essentially the same DSP, but with additional features that allow for the integration of a microcontroller such as the ATmega328 (Arduino), ESP32, ESP8266, STM32, among others.
+Some of the modifications presented here will suggest replacing the Si4825 with the Si4827 - essentially the same DSP, but with additional features that allow for the integration of a microcontroller such as the ATmega328 (Arduino), ESP32, ESP8266, STM32, among others.
 
 Integrating a microcontroller into a radio project involving this DSP series can enhance the user interface by adding buttons and a display to control the receiver.
 
 
 ## ATTENTION
 
-***Any modifications or interventions you make to your radio – including those equipped with the Si4825 DSP – come with the risk of causing irreparable damage. If you decide to attempt any of the procedures described in this project, please understand that you are doing so at your own risk.***
+***Any modifications or interventions you make to your radio - including those equipped with the Si4825 DSP - come with the risk of causing irreparable damage. If you decide to attempt any of the procedures described in this project, please understand that you are doing so at your own risk.***
 
 ***The author of this project assumes no responsibility for any damage that may occur to your radio as a result of following the instructions or suggestions provided here.***
 
@@ -42,7 +42,7 @@ To build a radio based on the Si4825 or even modify a commercial radio, it is es
 | 8     | AMI        | AM RF input. AMI should be connected to the AM antenna |
 | 9     | RST        | Device reset (active low) input |
 | 10    | VOL+       | Volume button up |
-| 11    | VOL–       | Volume button down |
+| 11    | VOL-       | Volume button down |
 | 12    | XTALO      | Crystal oscillator output |
 | 13    | XTALI      | Crystal oscillator input/external reference clock input |
 | 14    | VDD        | Supply voltage. May be connected directly to battery |
@@ -87,7 +87,7 @@ This configuration allows for smooth and precise frequency tuning across the sup
 
 The Si4825-A10 is a highly integrated radio receiver that can pick up AM (MW) signals from 504 to 1750 kHz across five sub-bands. It uses digital low-IF technology, requiring very few external components and no manual tuning during production.
 
-This technology provides precise filtering, ensuring good selectivity and signal-to-noise ratio (SNR) with minimal variation across the entire AM band. **One of the five sub-bands, called AM4 (520–1730 kHz), is designed to work globally, supporting both 9 kHz and 10 kHz channel spacing to meet different regional AM standards**.
+This technology provides precise filtering, ensuring good selectivity and signal-to-noise ratio (SNR) with minimal variation across the entire AM band. **One of the five sub-bands, called AM4 (520-1730 kHz), is designed to work globally, supporting both 9 kHz and 10 kHz channel spacing to meet different regional AM standards**.
 
 Just like with FM signals, the Si4825-A10 enhances sensitivity and reduces interference from strong signals, making it easier to receive weaker stations.
 
@@ -116,65 +116,65 @@ As a result, each shortwave band can have **two possible coverage ranges**. See 
 | Band Name  | Band Frequency Range       | Channel Space | AR(K) | Note               |
 | ---------- | -------------------------- | --------------| ----- | ------------------ |  
 |            |                            |               |       | 47K botton resistor|   
-| FM1        | 87–108 MHz (50 µs)         |               |  47   |                    |             
-| FM2        | 87–108 MHz (50 µs)         |               |  57   |                    | 
-| FM3        | 87–108 MHz (75 µs)         |               |  67   |                    |
-| FM4        | 87–108 MHz (75 µs)         |               |  77   |                    |
-| FM5        | 86.5–109 MHz (50 µs)       |               |  87   |                    |
-| FM6        | 86.5–109 MHz (50 µs)       |               |  97   |                    |
-| FM7        | 87.3–108.25 MHz (50 µs)    |               | 107   |                    | 
-| FM8        | 87.3–108.25 MHz (50 µs)    |               | 117   |                    |
-| FM9        | 87.3–108.25 MHz (75 µs)    |               | 127   |                    |
-| FM10       | 87.3–108.25 MHz (75 µs)    |               | 137   |                    |
-| FM11       | 76–90 MHz (50 µs)          |               | 147   |                    |
-| FM12       | 76–90 MHz (50 µs)          |               | 157   |                    |
-| FM13       | 64–87 MHz (50 µs)          |               | 167   |                    |
-| FM14       | 64–87 MHz (50 µs)          |               | 177   |                    |
-| FM15       | 76–108 MHz (50 µs)         |               | 187   |                    |
-| FM16       | 76–108 MHz (50 µs)         |               | 197   |                    |
-| FM17       | 64–108 MHz (50 µs)         |               | 207   |                    |
-| FM18       | 64–108 MHz (50 µs)         |               | 217   |                    | 
-| AM1        | 520–1710 kHz               |     10k       | 227   |                    |
+| FM1        | 87-108 MHz (50 µs)         |               |  47   |                    |             
+| FM2        | 87-108 MHz (50 µs)         |               |  57   |                    | 
+| FM3        | 87-108 MHz (75 µs)         |               |  67   |                    |
+| FM4        | 87-108 MHz (75 µs)         |               |  77   |                    |
+| FM5        | 86.5-109 MHz (50 µs)       |               |  87   |                    |
+| FM6        | 86.5-109 MHz (50 µs)       |               |  97   |                    |
+| FM7        | 87.3-108.25 MHz (50 µs)    |               | 107   |                    | 
+| FM8        | 87.3-108.25 MHz (50 µs)    |               | 117   |                    |
+| FM9        | 87.3-108.25 MHz (75 µs)    |               | 127   |                    |
+| FM10       | 87.3-108.25 MHz (75 µs)    |               | 137   |                    |
+| FM11       | 76-90 MHz (50 µs)          |               | 147   |                    |
+| FM12       | 76-90 MHz (50 µs)          |               | 157   |                    |
+| FM13       | 64-87 MHz (50 µs)          |               | 167   |                    |
+| FM14       | 64-87 MHz (50 µs)          |               | 177   |                    |
+| FM15       | 76-108 MHz (50 µs)         |               | 187   |                    |
+| FM16       | 76-108 MHz (50 µs)         |               | 197   |                    |
+| FM17       | 64-108 MHz (50 µs)         |               | 207   |                    |
+| FM18       | 64-108 MHz (50 µs)         |               | 217   |                    | 
+| AM1        | 520-1710 kHz               |     10k       | 227   |                    |
 | AM2        | 522-1620 kHz               |      9k       | 237   |                    |
 | AM3        | 504-1665 kHz               |      9k       | 247   |                    | 
 | AM4        | 522-1728 kHz/520-1730 kHz  |      9k / 10k | 257   |                    |
 | AM5        | 510-1750 kHz               |     10k       | 267   |                    |
-| SW1-Wide   | 2.3–10.0 MHz               |      5k       | 277   | Pin 1 pulled up    | 
-| SW1-Narrow | 2.30–2.49 MHz              |      5k       |       | Pin 1 **floating** |
-| SW2-Wide   | 3.2–7.6 MHz                |      5k       | 287   | Pin 1 pulled up    |
-| SW2-Narrow | 3.20–3.40 MHz              |      5k       |       | Pin 1 **floating** |   
-| SW3-Wide   | 3.2–10.0 MHz               |      5k       | 297   | Pin 1 pulled up    |
-| SW3-Narrow | 3.90–4.00 MHz              |      5k       |       | Pin 1 **floating** | 
-| SW4-Wide   | 3.7–12.5 MHz               |      5k       | 307   | Pin 1 pulled up    | 
-| SW4-Narrow | 4.75–5.06 MHz              |      5k       |       | Pin 1 **floating** |
-| SW5-Wide   | 3.9–7.5 MHz                |      5k       | 317   | Pin 1 pulled up    |
-| SW5-Narrow | 5.6–6.4 MHz                |      5k       |       | Pin 1 **floating** |   
-| SW6-Wide   | 3.2–10.0 MHz               |      5k       | 327   | Pin 1 pulled up    |
-| SW6-Narrow | 3.90–4.00 MHz              |      5k       |       | Pin 1 **floating** | 
-| SW7-Wide   | 5.8–12.1 MHz               |      5k       | 337   | Pin 1 pulled up    | 
-| SW7-Narrow | 6.8–7.6 MHz                |      5k       |       | Pin 1 **floating** |
-| SW8-Wide   | 5.9–9.50 MHz               |      5k       | 347   | Pin 1 pulled up    |
-| SW8-Narrow | 7.1–7.6 MHz                |      5k       |       | Pin 1 **floating** |   
-| SW9-Wide   | 5.9–18.0 MHz               |      5k       | 357   | Pin 1 pulled up    |
-| SW9-Narrow | 9.2–10 MHz                 |      5k       |       | Pin 1 **floating** | 
-| SW10-Wide  | 7.0–16.0 MHz               |      5k       | 367   | Pin 1 pulled up    | 
-| SW10-Narrow| 11.45–12.25 MHz            |      5k       |       | Pin 1 **floating** |
-| SW11-Wide  | 7.0–23.0 MHz               |      5k       | 377   | Pin 1 pulled up    |
-| SW11-Narrow| 11.6–12.2 MHz              |      5k       |       | Pin 1 **floating** |   
-| SW12-Wide  | 9.0–16.0 MHz               |      5k       | 387   | Pin 1 pulled up    |
-| SW12-Narrow| 13.4–14.2 MHz              |      5k       |       | Pin 1 **floating** | 
-| SW13-Wide  | 9.0–22.0 MHz               |      5k       | 397   | Pin 1 pulled up    | 
-| SW13-Narrow| 13.57–13.87 MHz            |      5k       |       | Pin 1 **floating** |
-| SW14-Wide  | 9.5–18.0 MHz               |      5k       | 407   | Pin 1 pulled up    |
-| SW14-Narrow| 15 –15.9 MHz               |      5k       |       | Pin 1 **floating** |   
-| SW15-Wide  | 10.0–16.0 MHz              |      5k       | 417   | Pin 1 pulled up    |
-| SW15-Narrow| 17.1 –18 MHz               |      5k       |       | Pin 1 **floating** | 
-| SW16-Wide  | 10.0–22.0 MHz              |      5k       | 427   | Pin 1 pulled up    | 
-| SW16-Narrow| 17.48–17.9 MHz             |      5k       |       | Pin 1 **floating** |
-| SW17-Wide  | 13.0–18.0 MHz              |      5k       | 437   | Pin 1 pulled up    |
-| SW17-Narrow| 21.2–22 MHz                |      5k       |       | Pin 1 **floating** |   
-| SW18-Wide  | 18.0–28.5 MHz              |      5k       | 447   | Pin 1 pulled up    |
-| SW18-Narrow| 21.45–21.85 MHz            |      5k       |       | Pin 1 **floating** | 
+| SW1-Wide   | 2.3-10.0 MHz               |      5k       | 277   | Pin 1 pulled up    | 
+| SW1-Narrow | 2.30-2.49 MHz              |      5k       |       | Pin 1 **floating** |
+| SW2-Wide   | 3.2-7.6 MHz                |      5k       | 287   | Pin 1 pulled up    |
+| SW2-Narrow | 3.20-3.40 MHz              |      5k       |       | Pin 1 **floating** |   
+| SW3-Wide   | 3.2-10.0 MHz               |      5k       | 297   | Pin 1 pulled up    |
+| SW3-Narrow | 3.90-4.00 MHz              |      5k       |       | Pin 1 **floating** | 
+| SW4-Wide   | 3.7-12.5 MHz               |      5k       | 307   | Pin 1 pulled up    | 
+| SW4-Narrow | 4.75-5.06 MHz              |      5k       |       | Pin 1 **floating** |
+| SW5-Wide   | 3.9-7.5 MHz                |      5k       | 317   | Pin 1 pulled up    |
+| SW5-Narrow | 5.6-6.4 MHz                |      5k       |       | Pin 1 **floating** |   
+| SW6-Wide   | 3.2-10.0 MHz               |      5k       | 327   | Pin 1 pulled up    |
+| SW6-Narrow | 3.90-4.00 MHz              |      5k       |       | Pin 1 **floating** | 
+| SW7-Wide   | 5.8-12.1 MHz               |      5k       | 337   | Pin 1 pulled up    | 
+| SW7-Narrow | 6.8-7.6 MHz                |      5k       |       | Pin 1 **floating** |
+| SW8-Wide   | 5.9-9.50 MHz               |      5k       | 347   | Pin 1 pulled up    |
+| SW8-Narrow | 7.1-7.6 MHz                |      5k       |       | Pin 1 **floating** |   
+| SW9-Wide   | 5.9-18.0 MHz               |      5k       | 357   | Pin 1 pulled up    |
+| SW9-Narrow | 9.2-10 MHz                 |      5k       |       | Pin 1 **floating** | 
+| SW10-Wide  | 7.0-16.0 MHz               |      5k       | 367   | Pin 1 pulled up    | 
+| SW10-Narrow| 11.45-12.25 MHz            |      5k       |       | Pin 1 **floating** |
+| SW11-Wide  | 7.0-23.0 MHz               |      5k       | 377   | Pin 1 pulled up    |
+| SW11-Narrow| 11.6-12.2 MHz              |      5k       |       | Pin 1 **floating** |   
+| SW12-Wide  | 9.0-16.0 MHz               |      5k       | 387   | Pin 1 pulled up    |
+| SW12-Narrow| 13.4-14.2 MHz              |      5k       |       | Pin 1 **floating** | 
+| SW13-Wide  | 9.0-22.0 MHz               |      5k       | 397   | Pin 1 pulled up    | 
+| SW13-Narrow| 13.57-13.87 MHz            |      5k       |       | Pin 1 **floating** |
+| SW14-Wide  | 9.5-18.0 MHz               |      5k       | 407   | Pin 1 pulled up    |
+| SW14-Narrow| 15 -15.9 MHz               |      5k       |       | Pin 1 **floating** |   
+| SW15-Wide  | 10.0-16.0 MHz              |      5k       | 417   | Pin 1 pulled up    |
+| SW15-Narrow| 17.1 -18 MHz               |      5k       |       | Pin 1 **floating** | 
+| SW16-Wide  | 10.0-22.0 MHz              |      5k       | 427   | Pin 1 pulled up    | 
+| SW16-Narrow| 17.48-17.9 MHz             |      5k       |       | Pin 1 **floating** |
+| SW17-Wide  | 13.0-18.0 MHz              |      5k       | 437   | Pin 1 pulled up    |
+| SW17-Narrow| 21.2-22 MHz                |      5k       |       | Pin 1 **floating** |   
+| SW18-Wide  | 18.0-28.5 MHz              |      5k       | 447   | Pin 1 pulled up    |
+| SW18-Narrow| 21.45-21.85 MHz            |      5k       |       | Pin 1 **floating** | 
 |            |                            |               | 500   | 53K top resistor   |       
 
 #### About the Previous Table:
@@ -195,6 +195,18 @@ Conversely, if the radio design includes a multi-position band selection switch 
 It is also possible to implement both options in the same design. To achieve this, add a switch that, when turned on, connects the pull-up resistor to the LNA_EN pin, and when turned off, leaves the pin floating.
 
 ***Note: Changing the state of this switch does not immediately alter the configuration from Wide to Narrow (or vice-versa). For the change to take effect, the Si4825 must be reset or power-cycled.***
+
+
+
+##### Narrow band commertial receiver dial 
+
+![Narrow band commertial receiver dial](./Images/NARROW_BAND_EXAMPLE_01.jpg)
+
+
+##### Wide band commertial receiver dial 
+
+
+![Wide band commertial receiver dial](./Images/WIDE_BAND_EXAMPLE_01.jpg)
 
 
 The circuit below shows the Narrow and Wide Band setup.  
@@ -220,7 +232,7 @@ In this example, a small modification will be made to a low-cost radio (priced a
 ![Low-Cost AM/FM Radio](./Images/R_EXAMPLE_03.jpg)
 
 
-The image below shows the radio opened, with the top part of the circuit board featuring very few components – a characteristic of DSP-based receivers, including the Si4825.
+The image below shows the radio opened, with the top part of the circuit board featuring very few components - a characteristic of DSP-based receivers, including the Si4825.
 
 
 ![Low-Cost AM/FM Radio](./Images/EXAMPLE_R01.jpg)
@@ -262,7 +274,7 @@ Remember that, as previously mentioned, the resistor network (voltage divider) f
 
 In the configuration shown in the image, the receiver will cover all the Narrow bands available on the Si4825.
 
-The challenge with this approach – using a variable resistor instead of a band switch – is that locating the desired band becomes more difficult, as there is no precise indication of the resistance or the voltage divider result on the potentiometer. However, with experience using the radio in this configuration, it becomes easier to find a particular band and, consequently, a shortwave station.
+The challenge with this approach - using a variable resistor instead of a band switch - is that locating the desired band becomes more difficult, as there is no precise indication of the resistance or the voltage divider result on the potentiometer. However, with experience using the radio in this configuration, it becomes easier to find a particular band and, consequently, a shortwave station.
 
 
 ![Low-Cost AM/FM Radio](./Images/EXAMPLE_R06.jpg)
@@ -283,4 +295,4 @@ The figure below illustrates the final result of the modification. There is a [v
 ## References 
 
 * BROADCAST MECHANICAL TUNING AM/FM/SW RADIO RECEIVER (Si4825-A10)
-* SKYWORKS -  Si4825 DEMO BOARD USER’S GUIDE (Si4825-DEMO)
+* SKYWORKS -  Si4825 DEMO BOARD USER'S GUIDE (Si4825-DEMO)
