@@ -234,7 +234,7 @@ However, if you incorporate the previously mentioned tip regarding the Narrow an
 
 Development of a band allocation plan for a 12-position selector, designed to control a receiver based on the Si4825. The plan segments the spectrum into 12 bands, covering one FM band, one AM band, and ten Shortwave (SW) bands. The band definition aims to optimize signal reception, ensuring comprehensive coverage of radio frequency ranges, with a focus on maximizing the device's selectivity.
 
-The table below shows the Band Allocation Plan for a 12-Position Band Selector (12 Bands - One FM Band, One AM Band, and Ten Shortwave Bands) for the Si4825.
+The table below shows the Band Allocation Plan for a 12-Position Band Selector (12 Bands - One FM Band, One AM Band, and Ten Shortwave Bands) for the Si4825. The highlights in Blue, Red, and Green represent the bands selected for implementation in the hypothetical radio.
 
 ![Band Allocation Plan for a 12-Position Band Selector example](./Images/custom_band_table.jpg)
 
