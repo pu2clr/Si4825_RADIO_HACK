@@ -113,7 +113,6 @@ The values of the resistor network **do not need to be changed** to switch betwe
 As a result, each shortwave band can have **two possible coverage ranges**. See the table below. 
 
 
-
 | Band Name  | Band Frequency Range       | Channel Space | AR(K) | Note               |
 | ---------- | -------------------------- | --------------| ----- | ------------------ |  
 |            |                            |               |       | 47K botton resistor|   
@@ -307,3 +306,4 @@ The figure below illustrates the final result of the modification. There is a [v
 
 * BROADCAST MECHANICAL TUNING AM/FM/SW RADIO RECEIVER (Si4825-A10)
 * SKYWORKS -  Si4825 DEMO BOARD USER'S GUIDE (Si4825-DEMO)
+* [DIY Si4825 A10 multiband Radio MW,SW,FM](https://youtu.be/gH5_U2VM6XY?si=lhl02nU1OgIUE2gD)
