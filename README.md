@@ -225,6 +225,8 @@ Although not very common or typically found in commercial receivers based on the
 ![About Narrow and Wide band setup](./schematic/si4825_Narrow_and_Wide_Band_Setup.jpg)
 
 
+However, if you incorporate the previously mentioned tip regarding the Narrow and Wide Band configuration into the circuit, you can opt for 24 shortwave bands instead of 12. 
+
 ***Note: Changing the state of this switch does not immediately alter the configuration from Wide to Narrow (or vice-versa). For the change to take effect, the Si4825 must be reset or power-cycled.***
 
 
