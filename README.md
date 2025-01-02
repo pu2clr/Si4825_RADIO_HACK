@@ -202,6 +202,7 @@ It is also possible to implement both options in the same design. To achieve thi
 The images below show the dial examples of commertial receivers based on Si4825 using Narrow and Wide band setup. 
 
 
+
 ##### Narrow band commertial receiver dial 
 
 ![Narrow band commertial receiver dial](./Images/NARROW_BAND_EXAMPLE_01.jpg)
@@ -223,6 +224,15 @@ The circuit below shows the Narrow and Wide Band setup.
 
 
 ![About Narrow and Wide band setup](./schematic/si4825_Narrow_and_Wide_Band_Setup.jpg)
+
+
+#### Band Allocation Plan for a 12-Position Band Selector example
+
+Development of a band allocation plan for a 12-position selector, designed to control a receiver based on the Si4825. The plan segments the spectrum into 12 bands, covering one FM band, one AM band, and ten Shortwave (SW) bands. The band definition aims to optimize signal reception, ensuring comprehensive coverage of radio frequency ranges, with a focus on minimizing interference and maximizing the device's selectivity.
+
+The table below shows the Band Allocation Plan for a 12-Position Band Selector (12 Bands - One FM Band, One AM Band, and Ten Shortwave Bands) for the Si4825.
+
+![Band Allocation Plan for a 12-Position Band Selector example](./Images/custom_band_table.png)
 
 
 
