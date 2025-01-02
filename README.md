@@ -2,11 +2,9 @@
 
 This project aims to assist individuals interested in developing or modifying receivers based on the Si4825. It focuses on converting AM/FM radios equipped with the Si4825 DSP to enable shortwave (SW) reception, as well as expanding the shortwave bands on existing AM/FM/SW receivers. By modifying and enhancing the circuitry, this documentation and project provide guidance on expanding the functionality of these radios, allowing them to receive a broader range of frequencies. By understanding the documentation presented in this repository, you are also expected to be capable of developing your own receiver using the Si4825 and a few additional components.
 
-One of the highlights of this documentation is to unlock new capabilities in receivers based on the Si4825, providing a practical and accessible way to upgrade and customize low-cost AM/FM radios for shortwave listening. 
+***One of the highlights of this documentation is to unlock new capabilities in receivers based on the Si4825, providing a practical and accessible way to upgrade and customize low-cost AM/FM radios for shortwave listening.*** 
 
-As suggested before, this repository will serve as a guide for the construction, modification, and improvement of Si4825-based receivers, offering insights into hardware adjustments and software tweaks when applicable. Some of the modifications presented here will suggest replacing the Si4825 with the Si4827 - essentially the same DSP, but with additional features that allow for the integration of a microcontroller such as the ATmega328 (Arduino), ESP32, ESP8266, STM32, among others.
-
-Integrating a microcontroller into a radio project involving this DSP series can enhance the user interface by adding buttons and a display to control the receiver.
+As suggested before, this repository will serve as a guide for the construction, modification, and improvement of Si4825-based receivers, offering insights into hardware adjustments and software tweaks when applicable. ***Some of the modifications presented here will suggest replacing the Si4825 with the Si4827 - essentially the same DSP, but with additional features that allow for the integration of a microcontroller such as the ATmega328 (Arduino), ESP32, ESP8266, STM32, among others***. Integrating a microcontroller into a radio project involving this DSP series can enhance the user interface by adding buttons and a display to control the receiver.
 
 
 Author: Ricardo Lima Caratti - Jan, 2025
@@ -20,7 +18,7 @@ Author: Ricardo Lima Caratti - Jan, 2025
 ***Proceed with caution and ensure you are fully aware of the potential consequences before making any modifications.***
 
 
-
+***The tests and observations conducted by the author refer to the SI4825-A10 and SI4825-A20 versions.***
 
 
 ## The Si4825 pinout
@@ -67,6 +65,13 @@ Because the chip is highly integrated and fully tested at the factory, it makes 
 
 **IMPORTANT:** In some contexts within the Si4825 documentation, the acronym AM refers to Medium Wave (MW) rather than Amplitude Modulation. However, it is important to highlight that both MW and SW bands operate using Amplitude Modulation. 
 
+## Frequency Tuning 
+
+A valid channel can be found by adjusting a 100K potentiometer connected to the TUNE1 and TUNE2 pins of the Si4825 chip. The central terminal of the potentiometer is connected to the TUNE2 pin, while the other terminals are connected to TUNE1 and ground, respectively.
+
+This configuration allows for smooth and precise frequency tuning across the supported bands.
+
+
 ### Datasheet FM band information
 
 The Si4825 has a built-in low noise amplifier (LNA) that allows it to receive FM radio signals from 64 to 109 MHz, covering the worldwide FM broadcast band. It can also pick up TV audio stations in the same frequency range used in China.
@@ -78,20 +83,14 @@ On the receiving end, FM radios use a de-emphasis filter to lower those high fre
 Different regions use different de-emphasis settings. The de-emphasis filter can have a time constant of 50 or 75 microseconds (µs), depending on the area.
 
 
-## Frequency Tuning 
-
-A valid channel can be found by adjusting a 100K potentiometer connected to the TUNE1 and TUNE2 pins of the Si4825-A10 chip. The central terminal of the potentiometer is connected to the TUNE2 pin, while the other terminals are connected to TUNE1 and ground, respectively.
-
-This configuration allows for smooth and precise frequency tuning across the supported bands.
-
 
 ## Datasheet MW(AM) band information 
 
-The Si4825-A10 is a highly integrated radio receiver that can pick up AM (MW) signals from 504 to 1750 kHz across five sub-bands. It uses digital low-IF technology, requiring very few external components and no manual tuning during production.
+The Si4825 is a highly integrated radio receiver that can pick up AM (MW) signals from 504 to 1750 kHz across five sub-bands. It uses digital low-IF technology, requiring very few external components and no manual tuning during production.
 
 This technology provides precise filtering, ensuring good selectivity and signal-to-noise ratio (SNR) with minimal variation across the entire AM band. **One of the five sub-bands, called AM4 (520-1730 kHz), is designed to work globally, supporting both 9 kHz and 10 kHz channel spacing to meet different regional AM standards**.
 
-Just like with FM signals, the Si4825-A10 enhances sensitivity and reduces interference from strong signals, making it easier to receive weaker stations.
+Just like with FM signals, the Si4825 enhances sensitivity and reduces interference from strong signals, making it easier to receive weaker stations.
 
 The receiver is also flexible when it comes to antennas. It works with ferrite loop stick antennas ranging from 180 to 450 µH. If you want to use an air loop antenna, a transformer can be added to increase its inductance. By using a 1:5 turn ratio inductor, the inductance is multiplied by 25 times, making it compatible with most AM air loop antennas, which typically have inductance values between 10 and 20 µH.
 
@@ -316,6 +315,6 @@ The figure below illustrates the final result of the modification. There is a [v
 
 ## References 
 
-* BROADCAST MECHANICAL TUNING AM/FM/SW RADIO RECEIVER (Si4825-A10)
+* BROADCAST MECHANICAL TUNING AM/FM/SW RADIO RECEIVER (Si4825)
 * SKYWORKS -  Si4825 DEMO BOARD USER'S GUIDE (Si4825-DEMO)
 * [DIY Si4825 A10 multiband Radio MW,SW,FM](https://youtu.be/gH5_U2VM6XY?si=lhl02nU1OgIUE2gD)
