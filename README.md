@@ -114,9 +114,9 @@ The values of the resistor network **do not need to be changed** to switch betwe
 As a result, each shortwave band can have **two possible coverage ranges**. See the table below. 
 
 
-| Band Name  | Band Frequency Range       | Channel Space | AR(K) | Note               |
+| Band Name  | Band Frequency Range       | Channel Space | AR(kΩ)| Note               |
 | ---------- | -------------------------- | --------------| ----- | ------------------ |  
-|            |                            |               |       | 47K botton resistor|   
+|            |                            |               |       | 47kΩ botton resistor|   
 | FM1        | 87-108 MHz (50 µs)         |               |  47   |                    |             
 | FM2        | 87-108 MHz (50 µs)         |               |  57   |                    | 
 | FM3        | 87-108 MHz (75 µs)         |               |  67   |                    |
@@ -176,7 +176,7 @@ As a result, each shortwave band can have **two possible coverage ranges**. See 
 | SW17-Narrow| 21.2-22 MHz                |      5k       |       | Pin 1 **floating** |   
 | SW18-Wide  | 18.0-28.5 MHz              |      5k       | 447   | Pin 1 pulled up    |
 | SW18-Narrow| 21.45-21.85 MHz            |      5k       |       | Pin 1 **floating** | 
-|            |                            |               | 500   | 53K top resistor   |       
+|            |                            |               | 500   | 53kΩ top resistor   |       
 
 #### About the Previous Table:
 
