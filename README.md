@@ -232,7 +232,7 @@ Development of a band allocation plan for a 12-position selector, designed to co
 
 The table below shows the Band Allocation Plan for a 12-Position Band Selector (12 Bands - One FM Band, One AM Band, and Ten Shortwave Bands) for the Si4825.
 
-![Band Allocation Plan for a 12-Position Band Selector example](./Images/custom_band_table.png)
+![Band Allocation Plan for a 12-Position Band Selector example](./Images/custom_band_table.jpg)
 
 
 
