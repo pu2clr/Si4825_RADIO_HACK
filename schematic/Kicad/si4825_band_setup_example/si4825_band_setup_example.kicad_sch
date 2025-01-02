@@ -546,7 +546,7 @@
     (uuid f41dcc17-11be-4e2b-839d-940dc69fce21)
   )
 
-  (text "SW7" (at 82.55 52.07 90)
+  (text "SW8" (at 82.55 52.07 90)
     (effects (font (size 1.27 1.27) (thickness 0.254) bold) (justify left bottom))
     (uuid 0c182655-3d21-46ea-9952-8cfd554dec1c)
   )
@@ -554,7 +554,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 0f67026a-ac78-4e40-a5af-788b2b4f1804)
   )
-  (text "437K" (at 128.27 44.45 90)
+  (text "427K" (at 128.27 44.45 90)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 19637ee0-44dd-415f-9aba-8ccf357b8355)
   )
@@ -570,11 +570,11 @@
     (effects (font (size 1.5 1.5) (thickness 0.3) bold) (justify left bottom))
     (uuid 31b3974f-eb86-4cd6-829b-730907ee95a9)
   )
-  (text "337K" (at 82.55 44.45 90)
+  (text "347K" (at 82.55 44.45 90)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 39fcac19-9630-4475-b4c8-893748a40182)
   )
-  (text "SW15" (at 120.65 50.8 90)
+  (text "SW14" (at 120.65 50.8 90)
     (effects (font (size 1.27 1.27) (thickness 0.254) bold) (justify left bottom))
     (uuid 455ac2ba-94c2-4b53-8ad5-cb62efe228c4)
   )
@@ -582,7 +582,7 @@
     (effects (font (size 1.27 1.27) (thickness 0.254) bold) (justify left bottom))
     (uuid 4a7802cf-895e-4631-a31d-e57bcbd7bdac)
   )
-  (text "417K" (at 120.65 44.45 90)
+  (text "407K" (at 120.65 44.45 90)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 50bc5606-f8f2-4c0f-9323-2536fcdd87a1)
   )
@@ -594,11 +594,11 @@
     (effects (font (size 1.27 1.27) (thickness 0.254) bold) (justify left bottom))
     (uuid 645be61c-2118-48ef-adc4-007b196241bd)
   )
-  (text "AM4" (at 59.69 52.07 90)
+  (text "AM5" (at 59.69 52.07 90)
     (effects (font (size 1.27 1.27) (thickness 0.254) bold) (justify left bottom))
     (uuid 6e80511f-048a-4fd8-9840-43bc262321e1)
   )
-  (text "297K" (at 67.31 44.45 90)
+  (text "277K" (at 67.31 44.45 90)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 7345a22d-fd29-40a6-8648-cd7eec7e1ef5)
   )
@@ -606,7 +606,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 769bfb41-1086-4582-b0a0-5717c1fac70a)
   )
-  (text "407K" (at 113.03 44.45 90)
+  (text "397K" (at 113.03 44.45 90)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 7daede63-f9cc-4f3a-82f0-c656dcfb6166)
   )
@@ -618,8 +618,8 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 94b1a7a6-3eec-42d4-beaa-d6b890a6ed38)
   )
-  (text "| Band Name  | Band Frequency Range       |\n| ---------- | -------------------------- |\n| FM3        | 87-108 MHz (75 µs)         | \n| AM4        | 522-1728 kHz/520-1730 kHz  |\n| SW3-Narrow | 3.90-4.00 MHz              |\n| SW4-Narrow | 4.75-5.06 MHz              |\n| SW9-Narrow | 9.2-10 MHz                 |\n| SW10-Narrow| 11.45-12.25 MHz            | \n| SW12-Narrow| 13.4-14.2 MHz              |\n| SW14-Narrow| 15 -15.9 MHz               |\n| SW15-Narrow| 17.1 -18 MHz               |\n| SW17-Narrow| 21.2-22 MHz                |\n| SW18-Narrow| 21.45-21.85 MHz            |\n\nSee Si4825 DEMO BOARD USER'S GUIDE for more details"
-    (at 16.51 101.6 0)
+  (text "| Band Name  | Narrow Frequency Range  | Wide Frequency Range   |\n| ---------- | ------------------------| ---------------------- |\n| FM3        | 87-108 MHz (75 µs)      |                        |\n| AM5        | 510-1750 kHz (10kHz)    |                        |\n| SW1        | 2.30-2.49 MHz           | 2.3-10.0 MHz           |\n| SW4        | 4.75-5.06 MHz           | 3.7-12.5 MHz           |\n| SW8        | 7.1-7.6 MHz             | 5.9-9.50 MHz           |\n| SW9        | 9.2-10 MHz              | 5.9-18.0 MHz           |\n| SW10       | 11.45-12.25 MHz         | 7.0-16.0 MHz           |\n| SW12       | 13.4-14.2 MHz           | 9.0-16.0 MHz           |\n| SW13       | 13.57-13.87 MHz         | 9.0-22.0 MHz           |\n| SW14       | 15 -15.9 MHz            | 9.5-18.0 MHz           |\n| SW16       | 17.48-17.9 MHz          | 10.0-22.0 MHz          |\n| SW18       | 21.45-21.85 MHz         | 18.0-28.5 MHz          |\n\nSee Si4825 DEMO BOARD USER'S GUIDE for more details"
+    (at 15.24 120.65 0)
     (effects (font (face "Courier New") (size 1.27 1.27) (thickness 0.254) bold) (justify left bottom))
     (uuid 988d8a5f-8773-415c-9699-6a2c23a1a9bb)
   )
@@ -627,15 +627,15 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c4fc4713-baf7-4e7b-983d-ccace6a66025)
   )
-  (text "SW17" (at 128.27 50.8 90)
+  (text "SW16" (at 128.27 50.8 90)
     (effects (font (size 1.27 1.27) (thickness 0.254) bold) (justify left bottom))
     (uuid d243a403-7360-4ea8-92ce-78cf647803a5)
   )
-  (text "257K" (at 59.69 44.45 90)
+  (text "267" (at 59.69 44.45 90)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid d3c2d5d6-0ff6-4757-b495-70fa2c353853)
   )
-  (text "SW14" (at 113.03 50.8 90)
+  (text "SW13" (at 113.03 50.8 90)
     (effects (font (size 1.27 1.27) (thickness 0.254) bold) (justify left bottom))
     (uuid d8b2aba8-8b2c-4d97-8508-7fced0749723)
   )
@@ -643,7 +643,7 @@
     (effects (font (size 1.27 1.27) (thickness 0.254) bold) (justify left bottom))
     (uuid dd4c5c55-670f-4a6f-876b-9abbedece86d)
   )
-  (text "SW3" (at 67.31 52.07 90)
+  (text "SW1" (at 67.31 52.07 90)
     (effects (font (size 1.27 1.27) (thickness 0.254) bold) (justify left bottom))
     (uuid fcada27b-4e2a-495c-b118-22bfa0c49701)
   )
@@ -658,7 +658,7 @@
     (property "Reference" "R4" (at 72.39 30.48 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "10K" (at 72.39 33.02 90)
+    (property "Value" "30K" (at 72.39 33.02 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 72.39 35.052 90)
@@ -670,7 +670,7 @@
     (pin "1" (uuid 90a54182-3289-4a4a-8848-0211df8e5a88))
     (pin "2" (uuid ae125da9-63fd-4971-8c04-a960b9eb6b54))
     (instances
-      (project "Basic_Setup"
+      (project "si4825_band_setup_example"
         (path "/cf4feedd-3416-459a-83d0-42e924d6c0b9"
           (reference "R4") (unit 1)
         )
@@ -696,7 +696,7 @@
     (pin "1" (uuid 0810e285-0c50-4ab3-a8ef-578e6ec64598))
     (pin "2" (uuid 2f5575ed-201a-4889-8810-ef4612709d8e))
     (instances
-      (project "Basic_Setup"
+      (project "si4825_band_setup_example"
         (path "/cf4feedd-3416-459a-83d0-42e924d6c0b9"
           (reference "R8") (unit 1)
         )
@@ -722,7 +722,7 @@
     (pin "1" (uuid dbdd22d6-9104-4747-9605-160a6e0fc6c6))
     (pin "2" (uuid 7e35c0b3-281e-4c55-bfce-c3dcc446e070))
     (instances
-      (project "Basic_Setup"
+      (project "si4825_band_setup_example"
         (path "/cf4feedd-3416-459a-83d0-42e924d6c0b9"
           (reference "R10") (unit 1)
         )
@@ -736,7 +736,7 @@
     (property "Reference" "R9" (at 110.49 30.48 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "20K" (at 110.49 33.02 90)
+    (property "Value" "10K" (at 110.49 33.02 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 110.49 35.052 90)
@@ -748,7 +748,7 @@
     (pin "1" (uuid 2fdc35d8-f985-4db4-bd6e-384c357362c3))
     (pin "2" (uuid 0883bda9-3beb-4f01-9e5b-20b37e58dd4b))
     (instances
-      (project "Basic_Setup"
+      (project "si4825_band_setup_example"
         (path "/cf4feedd-3416-459a-83d0-42e924d6c0b9"
           (reference "R9") (unit 1)
         )
@@ -762,7 +762,7 @@
     (property "Reference" "R3" (at 64.77 30.48 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "40K" (at 64.77 33.02 90)
+    (property "Value" "10K" (at 64.77 33.02 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 64.77 35.052 90)
@@ -774,7 +774,7 @@
     (pin "1" (uuid 4eb5e1b2-1899-4662-a7fa-9dd993ad9488))
     (pin "2" (uuid 0a8f935b-6356-48ed-a600-3825de718638))
     (instances
-      (project "Basic_Setup"
+      (project "si4825_band_setup_example"
         (path "/cf4feedd-3416-459a-83d0-42e924d6c0b9"
           (reference "R3") (unit 1)
         )
@@ -788,7 +788,7 @@
     (property "Reference" "R6" (at 87.63 30.48 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "20K" (at 87.63 33.02 90)
+    (property "Value" "10K" (at 87.63 33.02 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 87.63 35.052 90)
@@ -800,7 +800,7 @@
     (pin "1" (uuid 9de297be-3174-42fd-8ff9-4c8bef02d657))
     (pin "2" (uuid 9dff6216-8e05-4f85-ac38-3d214cf9fb2e))
     (instances
-      (project "Basic_Setup"
+      (project "si4825_band_setup_example"
         (path "/cf4feedd-3416-459a-83d0-42e924d6c0b9"
           (reference "R6") (unit 1)
         )
@@ -826,7 +826,7 @@
     (pin "1" (uuid 93945fb6-d7aa-4537-914a-8c48e36cb774))
     (pin "2" (uuid 23e05d44-1434-49a7-945e-a4b27d3c4551))
     (instances
-      (project "Basic_Setup"
+      (project "si4825_band_setup_example"
         (path "/cf4feedd-3416-459a-83d0-42e924d6c0b9"
           (reference "R1") (unit 1)
         )
@@ -863,7 +863,7 @@
     (pin "8" (uuid d30330da-cd2c-4e4e-af34-ed12587586f9))
     (pin "9" (uuid f07d0aee-0180-4353-a56c-0457dc182cf5))
     (instances
-      (project "Basic_Setup"
+      (project "si4825_band_setup_example"
         (path "/cf4feedd-3416-459a-83d0-42e924d6c0b9"
           (reference "BAND_SELECT") (unit 1)
         )
@@ -889,7 +889,7 @@
     (pin "1" (uuid c12b462d-9b52-4212-a9c0-9c43c2370046))
     (pin "2" (uuid d5bc6117-adbf-43aa-9bca-a85c2748222a))
     (instances
-      (project "Basic_Setup"
+      (project "si4825_band_setup_example"
         (path "/cf4feedd-3416-459a-83d0-42e924d6c0b9"
           (reference "R11") (unit 1)
         )
@@ -903,7 +903,7 @@
     (property "Reference" "R2" (at 57.15 30.48 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "190K" (at 57.15 33.02 90)
+    (property "Value" "200K" (at 57.15 33.02 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 57.15 35.052 90)
@@ -915,7 +915,7 @@
     (pin "1" (uuid df8c4076-c732-4da7-998b-631967ee4fdd))
     (pin "2" (uuid 335592ee-6fb6-4d51-bbcf-d2086ee45c0a))
     (instances
-      (project "Basic_Setup"
+      (project "si4825_band_setup_example"
         (path "/cf4feedd-3416-459a-83d0-42e924d6c0b9"
           (reference "R2") (unit 1)
         )
@@ -941,7 +941,7 @@
     (pin "1" (uuid bb3bb140-7349-458b-9417-262161c536fb))
     (pin "2" (uuid 8362bc59-dc6c-4cb7-87f4-a505594f78ec))
     (instances
-      (project "Basic_Setup"
+      (project "si4825_band_setup_example"
         (path "/cf4feedd-3416-459a-83d0-42e924d6c0b9"
           (reference "R5") (unit 1)
         )
@@ -955,7 +955,7 @@
     (property "Reference" "R12" (at 133.35 30.48 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "10K" (at 133.35 33.02 90)
+    (property "Value" "20K" (at 133.35 33.02 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 133.35 35.052 90)
@@ -967,7 +967,7 @@
     (pin "1" (uuid faa58f8d-7b00-402c-998a-edecba321dbc))
     (pin "2" (uuid f226d562-36b3-4c12-9595-0e9e8719f4b8))
     (instances
-      (project "Basic_Setup"
+      (project "si4825_band_setup_example"
         (path "/cf4feedd-3416-459a-83d0-42e924d6c0b9"
           (reference "R12") (unit 1)
         )
@@ -993,7 +993,7 @@
     (pin "1" (uuid 298c9493-c7d2-4bc4-84b6-dcafafa4147b))
     (pin "2" (uuid 34c38477-acf0-4708-b469-c9509acddc5c))
     (instances
-      (project "Basic_Setup"
+      (project "si4825_band_setup_example"
         (path "/cf4feedd-3416-459a-83d0-42e924d6c0b9"
           (reference "R7") (unit 1)
         )
@@ -1019,7 +1019,7 @@
     (pin "1" (uuid ea0dcd5d-e4e6-4912-ada5-cb0eabc137a4))
     (pin "2" (uuid 9379380d-1616-411f-80bc-2db6e7c4aac3))
     (instances
-      (project "Basic_Setup"
+      (project "si4825_band_setup_example"
         (path "/cf4feedd-3416-459a-83d0-42e924d6c0b9"
           (reference "R13") (unit 1)
         )
@@ -1044,7 +1044,7 @@
     )
     (pin "1" (uuid 3c478a22-039c-46e0-9e10-f5695b08bb91))
     (instances
-      (project "Basic_Setup"
+      (project "si4825_band_setup_example"
         (path "/cf4feedd-3416-459a-83d0-42e924d6c0b9"
           (reference "#PWR01") (unit 1)
         )
