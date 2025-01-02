@@ -226,18 +226,18 @@ The circuit below shows the Narrow and Wide Band setup.
 ![About Narrow and Wide band setup](./schematic/si4825_Narrow_and_Wide_Band_Setup.jpg)
 
 
-#### Band Allocation Plan for a 12-Position Band Selector example
+#### Band Allocation Plan for a hypothetical 12-Position Band Selector example
 
-Development of a band allocation plan for a 12-position selector, designed to control a receiver based on the Si4825. The plan segments the spectrum into 12 bands, covering one FM band, one AM band, and ten Shortwave (SW) bands. The band definition aims to optimize signal reception, ensuring comprehensive coverage of radio frequency ranges, with a focus on minimizing interference and maximizing the device's selectivity.
+Development of a band allocation plan for a 12-position selector, designed to control a receiver based on the Si4825. The plan segments the spectrum into 12 bands, covering one FM band, one AM band, and ten Shortwave (SW) bands. The band definition aims to optimize signal reception, ensuring comprehensive coverage of radio frequency ranges, with a focus on maximizing the device's selectivity.
 
 The table below shows the Band Allocation Plan for a 12-Position Band Selector (12 Bands - One FM Band, One AM Band, and Ten Shortwave Bands) for the Si4825.
 
 ![Band Allocation Plan for a 12-Position Band Selector example](./Images/custom_band_table.jpg)
 
+The circuit below illustrates the implementation of a theoretical 12-position band selector.  
 
 
-
-#### Si4825 Band setup Example
+##### Si4825 Band circuit setup Example
 
 The following example illustrates the band configuration for a hypothetical 12-band radio, one FM band, one MW(AM) band, and 10 SW bands. Observe in the circuit the indication of the band name (according to the previous table), the applied resistors, and the accumulated resistance value. ***It is important to highlight that for this hypothetical project, pin 1 of the Si4825 is not in the pull-up configuration. Thus, all selected SW bands will be 'Narrow'.***
 
