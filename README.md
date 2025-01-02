@@ -193,9 +193,8 @@ In general, Wide Band is recommended when the goal is to provide the user with a
 
 Conversely, if the radio design includes a multi-position band selection switch (six or more positions, for example), Narrow Band configuration may be more suitable. This option offers narrower coverage bands, providing a more precise tuning experience and making it easier to locate a specific station. For this configuration, the LNA_EN pin should be left floating (unconnected).
 
-It is also possible to implement both options in the same design. To achieve this, add a switch that, when turned on, connects the pull-up resistor to the LNA_EN pin, and when turned off, leaves the pin floating.
+It is also possible to implement both options in the same design. To achieve this, add a switch that, when turned on, connects the pull-up resistor to the LNA_EN pin, and when turned off, leaves the pin floating. This will be addressed later with more details.
 
-***Note: Changing the state of this switch does not immediately alter the configuration from Wide to Narrow (or vice-versa). For the change to take effect, the Si4825 must be reset or power-cycled.***
 
 
 The images below show the dial examples of commertial receivers based on Si4825 using Narrow and Wide band setup. 
@@ -219,10 +218,14 @@ This design can provide a better station tuning experience. The narrower bands m
 Notice on the dial shown in the previous figure that a single SW band covers from 5.9 to 18 MHz. This characteristic simplifies, to some extent, the radio design when adding the Shortwave band. However, this configuration may make it more difficult to tune stations, especially if the user wants to tune in to a station located among others nearby.
 
 
-The circuit below shows the Narrow and Wide Band setup.  
+#### The circuit below shows the Narrow and Wide Band setup.  
 
+Although not very common or typically found in commercial receivers based on the Si4825, it is possible to build a receiver that offers Narrow and Wide Band options. To achieve this, simply follow the circuit shown below.
 
 ![About Narrow and Wide band setup](./schematic/si4825_Narrow_and_Wide_Band_Setup.jpg)
+
+
+***Note: Changing the state of this switch does not immediately alter the configuration from Wide to Narrow (or vice-versa). For the change to take effect, the Si4825 must be reset or power-cycled.***
 
 
 #### Band Allocation Plan for a hypothetical 12-Position Band Selector example
