@@ -9,6 +9,8 @@ Some of the modifications presented here will suggest replacing the Si4825 with 
 Integrating a microcontroller into a radio project involving this DSP series can enhance the user interface by adding buttons and a display to control the receiver.
 
 
+Author: Ricardo Lima Caratti - Jan, 2025
+
 ## ATTENTION
 
 ***Any modifications or interventions you make to your radio - including those equipped with the Si4825 DSP - come with the risk of causing irreparable damage. If you decide to attempt any of the procedures described in this project, please understand that you are doing so at your own risk.***
