@@ -1,10 +1,10 @@
 # Si4825 RADIO HACK
 
-This project focuses on converting AM/FM radios equipped with the Si4825 DSP to enable shortwave (SW) reception. By modifying and enhancing the circuitry, it is possible to expand the functionality of these radios, allowing them to receive a broader range of frequencies.
+This project aims to assist individuals interested in developing or modifying receivers based on the Si4825. It focuses on converting AM/FM radios equipped with the Si4825 DSP to enable shortwave (SW) reception, as well as expanding the shortwave bands on existing AM/FM/SW receivers. By modifying and enhancing the circuitry, this documentation and project provide guidance on expanding the functionality of these radios, allowing them to receive a broader range of frequencies. By understanding the documentation presented in this repository, you are also expected to be capable of developing your own receiver using the Si4825 and a few additional components.
 
-The goal is to unlock new capabilities in receivers based on the Si4825, providing a practical and accessible way to upgrade and customize low-cost AM/FM radios for shortwave listening. This repository will serve as a guide for the construction, modification, and improvement of Si4825-based receivers, offering insights into hardware adjustments and software tweaks when applicable.
+One of the highlights of this documentation is to unlock new capabilities in receivers based on the Si4825, providing a practical and accessible way to upgrade and customize low-cost AM/FM radios for shortwave listening. 
 
-Some of the modifications presented here will suggest replacing the Si4825 with the Si4827 - essentially the same DSP, but with additional features that allow for the integration of a microcontroller such as the ATmega328 (Arduino), ESP32, ESP8266, STM32, among others.
+As suggested before, this repository will serve as a guide for the construction, modification, and improvement of Si4825-based receivers, offering insights into hardware adjustments and software tweaks when applicable. Some of the modifications presented here will suggest replacing the Si4825 with the Si4827 - essentially the same DSP, but with additional features that allow for the integration of a microcontroller such as the ATmega328 (Arduino), ESP32, ESP8266, STM32, among others.
 
 Integrating a microcontroller into a radio project involving this DSP series can enhance the user interface by adding buttons and a display to control the receiver.
 
