@@ -323,3 +323,6 @@ The figure below illustrates the final result of the modification. There is a [v
 * BROADCAST MECHANICAL TUNING AM/FM/SW RADIO RECEIVER (Si4825)
 * SKYWORKS -  Si4825 DEMO BOARD USER'S GUIDE (Si4825-DEMO)
 * [DIY Si4825 A10 multiband Radio MW,SW,FM](https://youtu.be/gH5_U2VM6XY?si=lhl02nU1OgIUE2gD)
+* [MAKING A MODERN RADIO](https://www.nutsvolts.com/magazine/article/june2013_OpenCommunication)
+* [A Voltage Controlled Multi-Band Radio Synth Module using the Si4825](https://balmatronics.wordpress.com/2021/01/28/a-voltage-controlled-multi-band-radio-synth-module-using-the-si4825/)
+* [RECEPTOR FM/OM/SW(AM) com SI4825](https://www.qsl.net/py2ohh/trx/si4825/si4825.html)
