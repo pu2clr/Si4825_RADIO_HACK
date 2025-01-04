@@ -231,7 +231,7 @@ However, if you incorporate the previously mentioned tip regarding the Narrow an
 
 #### More About Pin 1 (LNA_EN) 
 
-Under normal conditions, this pin remains in a high state (+Vcc) when the selected band is Shortwave. This behavior can be utilized for purposes beyond what has been previously discussed (activating a signal amplifier or switching between Narrow and Wide band). A simple function for this pin could be to light up an LED, indicating to the user that the radio is operating in Shortwave mode. Another possible use is to activate a bandpass filter for Shortwave.
+Under normal conditions, this pin stays in a high state (+Vcc) when the selected band is Shortwave. This behavior can be used for purposes beyond those previously mentioned (activating a signal amplifier or switching between Narrow and Wide band). A simple function for this pin could be to light up an LED, indicating to the user that the radio is operating in Shortwave mode. Another use is to activate a bandpass filter for Shortwave or switch the antenna when a Shortwave band is selected.
 
 
 #### Band Allocation Plan for a hypothetical 12-Position Band Selector example
