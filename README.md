@@ -321,6 +321,31 @@ The figure below illustrates the final result of the modification. There is a [v
 
 ***In the case of the receiver presented in this example, such filtering does not occur. However, if you encounter difficulties tuning to Shortwave stations in certain bands, it is recommended to inspect the AMI (AM Input) and FMI (FM Input) circuits. If necessary, consider modifying these circuits to resemble the model suggested in the Si4825 datasheet.***
 
+## Examplo 2 - Improving a Low-Cost AM/FM Radio to Receive Shortwave from 2.3 to 28.5 MHZ with digital interface
+
+
+This experiment consists of using the same radio presented in the previous section and transforming it into a multi-band radio with a digital interface through a microcontroller, buttons, and an OLED display. 
+
+For this, it will be necessary to replace the Si4825 with an Si4827, connect it to an Arduino microcontroller or a similar device, and display some information on a small OLED screen.
+
+
+The following photo shows the final result of the modification.
+
+![Final result of the modification](./Images/DIG_PH02.jpg)
+
+The components needed to make the modification 
+
+
+
+![Components](./Images/DIG_PH03.png)
+
+
+
+
+![Si4827 Pinout](./Images/DIG_PH04.png)
+
+
+
 
 ## References 
 
