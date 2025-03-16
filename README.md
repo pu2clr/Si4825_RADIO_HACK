@@ -11,8 +11,8 @@ Author: Ricardo Lima Caratti - Jan, 2025
 
 ## Summary
 
-1. [Technical Characteristics of the Si4825]()
-2. [Converting a $5 KapBom (K-2019) AM/FM Analog Radio into a Digital and Shortwave Radio]()
+1. [Technical Characteristics of the Si4825]https://github.com/pu2clr/Si4825_RADIO_HACK?tab=readme-ov-file#the-si4825-pinout)
+2. [Converting a $5 KapBom (K-2019) AM/FM Analog Radio into a Digital and Shortwave Radio](https://github.com/pu2clr/Si4825_RADIO_HACK?tab=readme-ov-file#examplo-1---modifying-a-low-cost-amfm-radio-to-receive-shortwave)
 3. [Converting a $10 KapBom (KA-3196) AM/FM/SW Analog Radio into a Digital Radio with Extended Shortwave Bands]()
 4. [Restoring a Motobras RM-PFT73AC Radio (made in Brazil) into a Digital Radio with FM and Enhanced Shortwave Capabilities]()
 
