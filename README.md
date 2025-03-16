@@ -6,8 +6,16 @@ This project aims to assist individuals interested in developing or modifying re
 
 As suggested before, this repository will serve as a guide for the construction, modification, and improvement of Si4825-based receivers, offering insights into hardware adjustments and software tweaks when applicable. ***Some of the modifications presented here will suggest replacing the Si4825 with the Si4827 - essentially the same DSP, but with additional features that allow for the integration of a microcontroller such as the ATmega328 (Arduino), ESP32, ESP8266, STM32, among others***. Integrating a microcontroller into a radio project involving this DSP series can enhance the user interface by adding buttons and a display to control the receiver.
 
-
 Author: Ricardo Lima Caratti - Jan, 2025
+
+
+## Summary
+
+1. [Technical Characteristics of the Si4825]()
+2. [Converting a $5 KapBom (K-2019) AM/FM Analog Radio into a Digital and Shortwave Radio]()
+3. [Converting a $10 KapBom (KA-3196) AM/FM/SW Analog Radio into a Digital Radio with Extended Shortwave Bands]()
+4. [Restoring a Motobras RM-PFT73AC Radio (made in Brazil) into a Digital Radio with FM and Enhanced Shortwave Capabilities]()
+
 
 ## ATTENTION
 
