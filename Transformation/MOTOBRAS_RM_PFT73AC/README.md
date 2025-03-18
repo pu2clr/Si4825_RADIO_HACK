@@ -1,6 +1,9 @@
 # Converting the Motobras RM-PFT73AC Radio (Si4825) into a Digital Interface Radio (Si4827)
 
 ## About the Motobras RM-PFT73AC Radio (Original)
+
+![About the Motobras RM-PFT73AC Radio (Original)](./Images/about_motobras_01.jpg)
+
 - 7 Bands (FM, AM, and 5 SW bands)
 - Analog dial
 - Based on the Si4825 DSP
@@ -9,6 +12,11 @@
 - SW coverage: 62m, 49m, 31m, 25m, and 19m
 
 ## About the Modified Motobras RM-PFT73AC Radio
+
+![About the Motobras RM-PFT73AC Radio (Original)](./Images/about_motobras_02.jpg)
+
+
+
 - 19 Bands (2 FM, 2 AM, and 15 SW)
 - Analog and Digital Dial
 - Based on the Si4827 DSP
