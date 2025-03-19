@@ -353,6 +353,7 @@ The components needed to make the modification
 ![Si4827 Pinout](./Images/DIG_PH04.png)
 
 
+[See more about this modification...](https://github.com/pu2clr/Si4825_RADIO_HACK/tree/main/Transformation/KAPBOM_K2019)
 
 
 ## References 
