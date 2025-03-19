@@ -8,7 +8,7 @@
 
 ## Modified Radio 
 
-![Radio after](./Images/radio_after.jpg.jpg)
+![Radio after](./Images/radio_after.jpg)
 
 
 ## About the Low-Cost Radio (KapBom K2019)
