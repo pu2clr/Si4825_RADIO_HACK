@@ -138,3 +138,16 @@
 ## Finish
 
 *Comment:* Final testing and verification of the modified radio.
+
+
+---
+
+## Converted PowerPoint (English)
+
+The PowerPoint "Modificando de Si4825 para Si4827 com interface Digital.pptx" was converted to Markdown and images are available in the `converted/` folder:
+
+- `Transformation/KAPBOM_K2019/converted/si4827_converted.md` (cleaned English Markdown)
+- `Transformation/KAPBOM_K2019/converted/images/` (extracted images)
+
+If you want further edits (grammar, restructuring, or embedding slides inline), tell me and I will apply them to the converted files.
+### Converting a low-cost radio based on the Si4825 into a digital interface radio using the Si4827.
