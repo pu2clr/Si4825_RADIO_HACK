@@ -5,7 +5,7 @@
 ### Convertendo rádio KAPBOM - KA-3196, baseado no DSP Si4825, em um rádio com interface digital utilizando o DSP Si4827.
 
 ![Slide 1 image](images/slide1_img_1.jpg)
-```markdown
+
 # Modifying the KapBom KA3196 Radio
 
 ## Slide 1
@@ -193,5 +193,3 @@
 ![](images/slide15_img_23.jpg)
 
 ---
-
-``` 
