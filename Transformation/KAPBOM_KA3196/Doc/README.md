@@ -4,7 +4,7 @@
 
 ### Convertendo rádio KAPBOM - KA-3196, baseado no DSP Si4825, em um rádio com interface digital utilizando o DSP Si4827.
 
-![Slide 1 image](converted/images/slide1_img_1.jpg)
+![Slide 1 image](images/slide1_img_1.jpg)
 ```markdown
 # Modifying the KapBom KA3196 Radio
 
@@ -12,9 +12,9 @@
 
 ### Converting the KAPBOM KA-3196 radio (based on the Si4825 DSP) into a radio with a digital interface using the Si4827 DSP.
 
-![](converted/images/slide1_img_1.jpg)
+![](images/slide1_img_1.jpg)
 
-![](converted/images/slide1_img_2.jpg)
+![](images/slide1_img_2.jpg)
 
 ---
 
@@ -46,7 +46,7 @@
 
 - No accessories (radio only)
 
-![](converted/images/slide2_img_3.jpg)
+![](images/slide2_img_3.jpg)
 
 ---
 
@@ -72,7 +72,7 @@
 
 - RF amplifier enabled indicator
 
-![](converted/images/slide3_img_4.jpg)
+![](images/slide3_img_4.jpg)
 
 ---
 
@@ -80,7 +80,7 @@
 
 ### Original radio opened
 
-![](converted/images/slide4_img_5.jpg)
+![](images/slide4_img_5.jpg)
 
 ---
 
@@ -88,7 +88,7 @@
 
 ### Replacement of Si4825 with Si4827
 
-![](converted/images/slide5_img_6.jpg)
+![](images/slide5_img_6.jpg)
 
 ---
 
@@ -96,9 +96,9 @@
 
 ### Si4825 vs Si4827 DSP
 
-![](converted/images/slide6_img_7.png)
+![](images/slide6_img_7.png)
 
-![](converted/images/slide6_img_8.png)
+![](images/slide6_img_8.png)
 
 ---
 
@@ -106,7 +106,7 @@
 
 ### KapBom radio PCB with Si4825
 
-![](converted/images/slide7_img_9.jpg)
+![](images/slide7_img_9.jpg)
 
 ---
 
@@ -114,9 +114,9 @@
 
 ### Removal of Si4825
 
-![](converted/images/slide8_img_10.jpg)
+![](images/slide8_img_10.jpg)
 
-![](converted/images/slide8_img_11.jpg)
+![](images/slide8_img_11.jpg)
 
 ---
 
@@ -124,9 +124,9 @@
 
 ### Preparation for Si4827
 
-![](converted/images/slide9_img_12.jpg)
+![](images/slide9_img_12.jpg)
 
-![](converted/images/slide9_img_13.png)
+![](images/slide9_img_13.png)
 
 ---
 
@@ -134,7 +134,7 @@
 
 ### Signal amplifier
 
-![](converted/images/slide10_img_14.png)
+![](images/slide10_img_14.png)
 
 ---
 
@@ -142,7 +142,7 @@
 
 ### Components for the modification
 
-![](converted/images/slide11_img_15.jpg)
+![](images/slide11_img_15.jpg)
 
 - TM1637 7-seg display
 
@@ -150,15 +150,15 @@
 
 - Push buttons
 
-![](converted/images/slide11_img_16.jpg)
+![](images/slide11_img_16.jpg)
 
-![](converted/images/slide11_img_17.jpg)
+![](images/slide11_img_17.jpg)
 
 - LEDs
 
-![](converted/images/slide11_img_18.jpg)
+![](images/slide11_img_18.jpg)
 
-![](converted/images/slide11_img_19.png)
+![](images/slide11_img_19.png)
 
 - LGT8F328
 
@@ -174,13 +174,13 @@
 
 ## Slide 13
 
-![](converted/images/slide13_img_20.jpg)
+![](images/slide13_img_20.jpg)
 
 ---
 
 ## Slide 14
 
-![](converted/images/slide14_img_21.jpg)
+![](images/slide14_img_21.jpg)
 
 ---
 
@@ -188,9 +188,9 @@
 
 ### Modification completed
 
-![](converted/images/slide15_img_22.jpg)
+![](images/slide15_img_22.jpg)
 
-![](converted/images/slide15_img_23.jpg)
+![](images/slide15_img_23.jpg)
 
 ---
 
