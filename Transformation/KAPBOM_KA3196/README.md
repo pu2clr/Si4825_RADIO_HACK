@@ -19,7 +19,7 @@
 
 ### About the KapBom KA3196 Radio (Original)
 
-- Price: R$60.00 to R$90.00
+- Price: $10 to $15
 
 - 9 bands (FM, AM and 7 SW)
 
