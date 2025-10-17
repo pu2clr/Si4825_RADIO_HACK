@@ -219,3 +219,6 @@
 |  DIAL      |     3        | Indicates that the analog dial shows the current frequency, matching the one displayed on the screen |
 |  TUNE      |     4         | Indicates that the receiver is tuned in a valid channel |
 |  LNA EN    |    10         | Shares the same Arduino/LGT pin 9 to indicate that the LNA is enabled |
+
+
+__See Arduino folder and check the sketch of this projetct__
