@@ -1,17 +1,15 @@
-# Converting a Low-Cost Radio Based on the Si4825 into a Digital Interface Radio Using the Si4827
+# Converting Si4825 to Si4827 with Digital Interface
 
+## Slide 1
 
-## Radio original
+### Converting a low-cost radio based on the Si4825 into a digital interface radio using the Si4827.
 
-![Radio before converting](./Images/radio_before.jpg)
+![Slide 1 image](images/slide1_img_1.jpg)
+![Slide 1 image](images/slide1_img_2.jpg)
 
+---
 
-## Modified Radio 
-
-![Radio after](./Images/radio_after.jpg)
-
-
-## About the Low-Cost Radio (KapBom K2019)
+## Slide 2 — About the low-cost radio (KapBom K2019)
 
 - Two bands (MW and FM)
 - Less than $5
@@ -20,34 +18,41 @@
 - Sturdy plastic casing
 - Analog interface
 
-**Warning:** There are other receivers from different manufacturers that use the same casing but are not equipped with the Si4825. Be sure the receiver is equipped with the Si4825.
+![](images/slide2_img_3.jpg)
 
-*Comment:* This slide introduces the KapBom K2019 radio, highlighting its affordability and compact design. 
+- Warning: There are other receivers from different manufacturers that use the same casing but are not equipped with the Si4825. Be sure the receiver is equipped with the Si4825.
 
-## About the Modified Radio
+---
+
+## Slide 3 — About the modified radio
 
 - 15 bands (3 FM, 2 AM, and 10 SW)
 - Bands can be configured via programming
 - Based on the Si4827 DSP
 - Uses the Seeeduino XIAO controller (ARM Cortex-M0+)
 
-*Comment:* The modifications allow for significantly expanded band coverage and digital control. 
+![](images/slide3_img_4.jpg)
 
+---
 
-## Components Used for the Modification
+## Slide 4 — Components used for the modification
 
-![Components Used for the Modification](./Images/components.png)
+![](images/slide4_img_5.jpg)
+![](images/slide4_img_6.jpg)
+![](images/slide4_img_7.jpg)
 
-
-- SEEEDUINO XIAO (ARM Cortex-M0+)
-- OLED I2C
-- SI4827
+- Seeeduino XIAO (ARM Cortex-M0+)
+- OLED (I2C)
+- Si4827
 - Push Buttons
 
+![](images/slide4_img_8.jpg)
 
-*Comment:* The list of components required for upgrading the radio with digital controls. 
+---
 
-## About the DSP Si4825
+## Slide 5 — About the DSP Si4825
+
+![](images/slide5_img_9.png)
 
 - Support for FM band (64–109 MHz)
 - Support for AM band (504–1750 kHz)
@@ -57,9 +62,11 @@
 - Band configuration according to region (AM/FM/SW)
 - Enhanced coverage for FM/SW bands
 
-*Comment:* Basic features of the Si4825 DSP, focusing on analog control and limited customization. 
+---
 
-## About the DSP Si4827
+## Slide 6 — About the DSP Si4827
+
+![](images/slide6_img_10.png)
 
 - Support for FM band (64–109 MHz)
 - Support for AM band (504–1750 kHz)
@@ -71,83 +78,66 @@
 - Support for digital volume control
 - Support for bass and treble adjustment
 
-*Comment:* The Si4827 introduces significant improvements, including I2C control and digital enhancements. 
+---
 
-## Modification Steps
+## Slides 7–12 — Disassembly, board, replacement, and photos
 
-### Open Radio (Before Modification)
+These slides show the radio opened, the board before modification, identification of the Si4825, replacement steps, and photos of the Si4827 soldered and the trace cut on pin 4 (BAND).
 
-*Comment:* This step involves opening the radio and inspecting the internal components. 
-
-### Board (Before Modification)
-
-*Comment:* The PCB layout before modifications are applied. 
-
-### Si4825 Identification (Check if the Radio is Based on Si4825)
-
-*Comment:* Ensure the radio is equipped with the Si4825 before proceeding with modifications. 
-
-### Replacement of Si4825 with Si4827
-
-*Comment:* Carefully desolder and replace the Si4825 with the Si4827. 
-
-### Si4827 Soldered on the Board
-
-*Comment:* The Si4827 must be securely soldered, ensuring proper connectivity. 
-
-### Si4827 with a Cut on the Trace Leading to Pin 4 (BAND)
-
-*Comment:* A necessary modification to allow software-controlled band selection. 
-
-## Si4827 and Seeduino XIAO Wireup
-
-| SI4827 Pin | SEEEDUINO Pin | Description                  |
-|------------|--------------|------------------------------|
-| 1          | 2            | SEEEDUINO Interrupt Pin      |
-| 9          | 6            | RESET                        |
-| 10         | A4 (SDA)     | I2C Bus (Data)               |
-| 11         | A5 (SCL)     | I2C Bus (Clock)              |
-
-*Comment:* Pin mappings for interfacing the Si4827 with Seeeduino XIAO. 
-
-### OLED Wiring
-| OLED Pin  | SEEEDUINO Pin | Description     |
-|-----------|--------------|-----------------|
-| SDA       | 4            | I2C Bus (Data)  |
-| CLK       | 5            | I2C Bus (Clock) |
-
-*Comment:* The OLED display connects via the I2C bus for visual feedback. 
-
-### Push Buttons Wiring
-| Button    | SEEEDUINO Pin | Function       |
-|-----------|--------------|---------------|
-| BAND UP   | 7            | Next Band     |
-| BAND DOWN | 8            | Previous Band |
-
-*Comment:* Buttons allow manual band switching when using the digital interface. 
-
-## Checking the Si4827 and Seeduino XIAO Setup
-
-*Comment:* Ensure all components are wired correctly before powering on. 
-
-## Case Modification
-### Case Modification Process
-
-*Comment:* Adjust the radio casing to accommodate the new components. 
-
-## Finish
-
-*Comment:* Final testing and verification of the modified radio.
-
+![](images/slide7_img_11.jpg)
+![](images/slide8_img_12.jpg)
+![](images/slide8_img_13.jpg)
+![](images/slide9_img_14.jpg)
+![](images/slide9_img_15.png)
+![](images/slide10_img_16.jpg)
+![](images/slide10_img_17.jpg)
+![](images/slide11_img_18.jpg)
+![](images/slide11_img_19.jpg)
+![](images/slide12_img_20.jpg)
 
 ---
 
-## Converted PowerPoint (English)
+## Slide 13 — Wiring (Si4827 and Seeeduino XIAO)
 
-The PowerPoint "Modificando de Si4825 para Si4827 com interface Digital.pptx" was converted to Markdown and images are available in the `converted/` folder:
+| Si4827 pin | Seeeduino pin | Description            |
+|------------|---------------|------------------------|
+| 1          | 2             | Seeeduino interrupt pin|
+| 9          | 6             | RESET                  |
+| 10         | A4 (SDA)      | I2C bus (Data)         |
+| 11         | A5 (SCL)      | I2C bus (Clock)        |
 
-- `Transformation/KAPBOM_K2019/converted/si4827_converted.md` (cleaned English Markdown)
-- `Transformation/KAPBOM_K2019/converted/images/` (extracted images)
+### OLED wiring
 
-If you want further edits (grammar, restructuring, or embedding slides inline), tell me and I will apply them to the converted files.
-### Converting a low-cost radio based on the Si4825 into a digital interface radio using the Si4827.
+| OLED pin | Seeeduino pin | Description     |
+|----------|---------------|-----------------|
+| SDA      | 4             | I2C Bus (Data)  |
+| CLK      | 5             | I2C Bus (Clock) |
+
+### Push buttons wiring
+
+| Button    | Seeeduino pin | Function       |
+|-----------|---------------|----------------|
+| BAND UP   | 7             | Next Band      |
+| BAND DOWN | 8             | Previous Band  |
+
+---
+
+## Slide 14 — Checking the Si4827 and Seeeduino XIAO setup
+
+![](images/slide14_img_21.png)
+
+---
+
+## Slides 15–16 — Case modification
+
+![](images/slide15_img_22.jpg)
+![](images/slide15_img_23.jpg)
+![](images/slide16_img_24.jpg)
+
+---
+
+## Slide 17 — Finish
+
+![](images/slide17_img_25.jpg)
+
+---
