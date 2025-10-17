@@ -193,3 +193,29 @@
 ![](images/slide15_img_23.jpg)
 
 ---
+
+
+##  Arduino and Si4827 pin connections
+| SI4827 pin | Arduino pin   |  Description                                       |
+| ---------  | ------------  | -------------------------------------------------  |
+|    1       |  D2           | Arduino interrupt pin                              |
+|    9       |  D12          | RESET                                              |
+|   10       |  A4/D4 (SDA)  | I2C bus (Data)                                     |
+|   11       |  A5/D5 (SCL)  | I2C bus (Clock)                                    | 
+| -----------| ------------- | ---------------------------------------------------|
+|  TM1637    |               |  7 Seg. Display based on TM1637                    |
+| -----------| ------------- | ---------------------------------------------------|                        
+|   Data     |  5            |                                                    |
+|   CLOCK    |  6            |                                                    |       
+| -----------| ------------- | ---------------------------------------------------|
+|Push Buttons|               |                                                    |
+| -----------| ------------- | ---------------------------------------------------| 
+|  BAND_UP   |     7         | Next Band                                          |                          
+|  BAND_DOWN |     8         | Previous Band                                      | 
+|  SW LNA_EN |     9         | Enable/Disable LNA for Shortwave                   | 
+| -----------| ------------- | ---------------------------------------------------| 
+|  LEDs      |               |                                                    |
+| -----------| ------------- | ---------------------------------------------------| 
+|  DIAL      |     3        | Indicates that the analog dial shows the current frequency, matching the one displayed on the screen |
+|  TUNE      |     4         | Indicates that the receiver is tuned in a valid channel |
+|  LNA EN    |    10         | Shares the same Arduino/LGT pin 9 to indicate that the LNA is enabled |
